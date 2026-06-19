@@ -1,0 +1,125 @@
+/* Color System matching your screenshot */
+:root {
+  --bg-dark: #121212;
+  --card-dark: #1a1a1a;
+  --text-cyan: #00e5ff;
+  --tag-bg: #6C757D;
+  --text-gray: #ffffff;
+}
+
+body {
+  background-color: var(--bg-dark) !important;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Text and Utility Modifications */
+.text-info {
+  color: var(--text-cyan) !important;
+}
+
+.text-secondary-custom {
+  color: var(--text-gray);
+}
+
+.bg-dark-custom {
+  background-color: var(--bg-dark);
+}
+
+.bg-card-custom {
+  background-color: var(--card-dark);
+}
+
+/* Navigation items */
+
+.nav-link {
+  color: var(--text-gray) !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-cyan) !important;
+}
+
+.btn-resume {
+  background-color: var(--text-cyan) !important;
+  border-color: var(--text-cyan) !important;
+  color: #121212 !important;
+  border-radius: 4px;
+}
+
+.btn-resume:hover {
+  opacity: 0.9;
+}
+.logo-img {
+  height: 95px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Sections */
+.section-title {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid #2a2a2a !important;
+  border-radius: 8px;
+}
+
+.bg-secondary-tag {
+  background-color: var(--tag-bg);
+  color: var(--text-gray);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+}
+
+/* Links & Socials */
+.social-icon {
+  transition: color 0.2s ease;
+}
+.social-icon:hover {
+  color: var(--text-cyan) !important;
+}
+
+/* Forms styling adjustments */
+.form-control::placeholder {
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.form-control:focus {
+  background-color: transparent !important;
+  border-color: var(--text-cyan) !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 229, 255, 0.25);
+  color: white !important;
+}
+
+.btn-secondary-custom {
+  background-color: #333333;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #444444;
+}
+
+/* Micro Fixes for spacing and layout lookalikes */
+.tracking-wide {
+  letter-spacing: 2px;
+}
+
+.bio-text {
+  line-height: 1.6;
+  max-width: 600px;
+}
