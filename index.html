@@ -131,86 +131,78 @@
             class="card bg-card-custom text-white border-0 p-4 mb-4 project-card"
           >
             <div class="row align-items-center">
+              <!-- IMAGE CAROUSEL -->
               <div class="col-md-5 mb-3 mb-md-0">
-                <img
-                  src="images/project-one.png"
-                  alt="Project Screenshot"
-                  class="img-fluid rounded border border-secondary"
-                />
-              </div>
-              <div class="col-md-7">
-                <h3 class="text-info h4 fw-bold mb-3">
-                  Digital Agency
-                  <i class="fa-solid fa-code text-info fs-6"></i>
-                  <i class="fa-solid fa-globe text-info fs-6 ms-1"></i>
-                </h3>
-                <p class="text-secondary-custom small mb-3">
-                  A digital agency website showcases services that help
-                  businesses grow online through web development, SEO, social
-                  media marketing, and branding. It acts as a platform where
-                  clients can explore solutions to improve their online
-                  presence, increase traffic, and generate leads. The website is
-                  designed to be modern, responsive, and user-friendly,
-                  reflecting the agency’s creativity and professionalism while
-                  providing clear service information and easy contact options.
-                </p>
-                <ul class="text-secondary-custom small ps-3 mb-4">
-                  <li>
-                    Provides complete digital marketing solutions for businesses
-                    and brands
-                  </li>
-                  <li>
-                    Offers services like web development, SEO, and social media
-                    management
-                  </li>
-                  <li>
-                    Helps businesses grow online with targeted marketing
-                    strategies
-                  </li>
-                  <li>
-                    Delivers modern, responsive, and user-friendly website
-                    designs
-                  </li>
-                  <li>
-                    Focuses on increasing traffic, leads, and brand visibility
-                  </li>
-                  <li>
-                    Uses data-driven approaches for better campaign performance
-                  </li>
-                  <li>Provides creative content and branding solutions</li>
-                  <li>
-                    Ensures continuous support and project maintenance for
-                    clients
-                  </li>
-                </ul>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-secondary-tag px-3 py-2">React</span>
-                  <span class="badge bg-secondary-tag px-3 py-2">Firebase</span>
-                  <span class="badge bg-secondary-tag px-3 py-2">HTML</span>
-                  <span class="badge bg-secondary-tag px-3 py-2">CSS</span>
-                  <span class="badge bg-secondary-tag px-3 py-2">NODE</span>
+                <div
+                  id="digitalCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#digitalCarousel"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#digitalCarousel"
+                      data-bs-slide-to="1"
+                    ></button>
+                  </div>
+
+                  <!-- Slides -->
+                  <div class="carousel-inner rounded border border-secondary">
+                    <div class="carousel-item active">
+                      <div class="img-box">
+                        <img
+                          src="images/project-one.png"
+                          alt="Project Image 1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="img-box">
+                        <img
+                          src="images/project-one-next.png"
+                          alt="Project Image 2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#digitalCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#digitalCarousel"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div
-            class="card bg-card-custom text-white border-0 p-4 mb-4 project-card"
-          >
-            <div class="row align-items-center">
-              <div class="col-md-5 mb-3 mb-md-0">
-                <img
-                  src="images/project-two.png"
-                  alt="Project Screenshot"
-                  class="img-fluid rounded border border-secondary"
-                />
-              </div>
+              <!-- CONTENT -->
               <div class="col-md-7">
                 <h3 class="text-info h4 fw-bold mb-3">
                   Petroil
                   <i class="fa-solid fa-code text-info fs-6"></i>
                   <i class="fa-solid fa-globe text-info fs-6 ms-1"></i>
                 </h3>
+
                 <p class="text-secondary-custom small mb-3">
                   Petroil is a modern fuel supply platform designed to connect
                   customers with reliable petroleum products and energy
@@ -218,6 +210,7 @@
                   options, place orders, and manage deliveries for businesses
                   and individuals.
                 </p>
+
                 <ul class="text-secondary-custom small ps-3 mb-4">
                   <li>
                     Provides reliable fuel supply services for businesses and
@@ -227,21 +220,126 @@
                   <li>Fast and scheduled fuel delivery support</li>
                   <li>Transparent pricing for better cost management</li>
                   <li>Focus on safe and efficient fuel distribution</li>
-                  <li>Designed with a simple and user-friendly interface</li>
-                  <li>
-                    Supports continuous supply for industrial and commercial
-                    needs
-                  </li>
-                  <li>
-                    Ensures timely service through an organized logistics system
-                  </li>
+                  <li>User-friendly interface for smooth experience</li>
+                  <li>Supports industrial and commercial fuel needs</li>
+                  <li>Ensures timely delivery with organized logistics</li>
                 </ul>
+
                 <div class="d-flex flex-wrap gap-2">
                   <span class="badge bg-secondary-tag px-3 py-2">React</span>
                   <span class="badge bg-secondary-tag px-3 py-2">Firebase</span>
                   <span class="badge bg-secondary-tag px-3 py-2">HTML</span>
                   <span class="badge bg-secondary-tag px-3 py-2">CSS</span>
-                  <span class="badge bg-secondary-tag px-3 py-2">NODE</span>
+                  <span class="badge bg-secondary-tag px-3 py-2">Node</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card bg-card-custom text-white border-0 p-4 mb-4 project-card"
+          >
+            <div class="row align-items-center">
+              <!-- IMAGE CAROUSEL -->
+              <div class="col-md-5 mb-3 mb-md-0">
+                <div
+                  id="petroilCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#petroilCarousel"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#petroilCarousel"
+                      data-bs-slide-to="1"
+                    ></button>
+                  </div>
+
+                  <!-- Slides -->
+                  <div class="carousel-inner rounded border border-secondary">
+                    <div class="carousel-item active">
+                      <div class="img-box">
+                        <img
+                          src="images/project-two.png"
+                          alt="Project Image 1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="img-box">
+                        <img
+                          src="images/project-two-next.png"
+                          alt="Project Image 2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#petroilCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#petroilCarousel"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- CONTENT -->
+              <div class="col-md-7">
+                <h3 class="text-info h4 fw-bold mb-3">
+                  Petroil
+                  <i class="fa-solid fa-code text-info fs-6"></i>
+                  <i class="fa-solid fa-globe text-info fs-6 ms-1"></i>
+                </h3>
+
+                <p class="text-secondary-custom small mb-3">
+                  Petroil is a modern fuel supply platform designed to connect
+                  customers with reliable petroleum products and energy
+                  solutions. The website provides an easy way to explore fuel
+                  options, place orders, and manage deliveries for businesses
+                  and individuals.
+                </p>
+
+                <ul class="text-secondary-custom small ps-3 mb-4">
+                  <li>
+                    Provides reliable fuel supply services for businesses and
+                    individuals
+                  </li>
+                  <li>Easy online ordering system for petroleum products</li>
+                  <li>Fast and scheduled fuel delivery support</li>
+                  <li>Transparent pricing for better cost management</li>
+                  <li>Focus on safe and efficient fuel distribution</li>
+                  <li>User-friendly interface for smooth experience</li>
+                  <li>Supports industrial and commercial fuel needs</li>
+                  <li>Ensures timely delivery with organized logistics</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-secondary-tag px-3 py-2">React</span>
+                  <span class="badge bg-secondary-tag px-3 py-2">Firebase</span>
+                  <span class="badge bg-secondary-tag px-3 py-2">HTML</span>
+                  <span class="badge bg-secondary-tag px-3 py-2">CSS</span>
+                  <span class="badge bg-secondary-tag px-3 py-2">Node</span>
                 </div>
               </div>
             </div>
